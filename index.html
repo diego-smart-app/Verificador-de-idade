@@ -118,7 +118,6 @@
             if (ano_nasc > 2025 || ano_nasc <= 1900)
             {
                 frase.innerHTML = 'Digite um ano válido !'
-                window.document.getElementById(ano).value = ''
                 window.document.getElementById('foto_pessoa').src = ""
             }
             else if (idade == 0)
@@ -155,7 +154,7 @@
                 frase.innerHTML = `Pessoa de ${idade} anos de idade, já está morta 😐`
                 window.document.getElementById('foto_pessoa').src = ""
             }
-            window.document.getElementById(ano).value = ''
+            window.document.getElementById('ano').value = ''
         }
 
     </script>
