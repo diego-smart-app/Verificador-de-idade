@@ -145,10 +145,14 @@
                 frase.innerHTML = `Verificamos um adulto com ${idade} anos de idade`
                 window.document.getElementById('foto_pessoa').src = "imagens/adulto.jpg"
             }
-            else if (idade <= 100)
+            else if (idade <= 110)
             {
                 frase.innerHTML = `Verificamos um idoso com ${idade} anos de idade`
                 window.document.getElementById('foto_pessoa').src = "imagens/idoso.jpg"
+            } else
+            {
+                frase.innerHTML = `Uma pessoa de ${idade} anos de idade, provavelmente está morta 😐`
+                window.document.getElementById('foto_pessoa').src = ""
             }
         }
 
